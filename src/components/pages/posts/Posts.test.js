@@ -15,6 +15,7 @@ test('renders halaman post dengan benar', async () => {
   expect(btn).toBeInTheDocument()
   expect(btn).toHaveTextContent('Back to Home')
 
+  // search text API
   const post = await waitFor(
     () => {
       return screen.findAllByText(
